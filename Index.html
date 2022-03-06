@@ -2,96 +2,80 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>A00369870 - Portafolio</title>
+    <title>Arepas - wiki</title>
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,900" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/IndexStyles.css" rel="stylesheet">
   </head>
   <body>
 
-    <header class="header-wrapper">
+    <header>
+
+      <div class="header-wrapper">
+
+        <div class="header-section">
+          <h1>Equipo Arepas</h1>
+        </div>
+
+        <div id="description" class="header-section">
+          <p>Descripcion (Objetivo del proyecto)</p>
+        </div>
+
+        <div class="header-section">
+          <hr  style="size:1;width:70%;text-align:left; margin-left:0;border-color:rgb(115, 115, 115)">
+        </div>
+
+        <div id="navegation" class="header-section">
+
+          <ul>
+            <li><a href="url">HOME</a></li>
+            <li><a href="url">ABOUT US</a></li>
+          </ul>
+        </div>
+
+        <div class="header-section">
+          <hr  style="size:1;width:70%;text-align:left; margin-left:0;border-color:rgb(115, 115, 115)">
+        </div>
+
+      </div>
 
     </header>
-<!--
-    <iframe width="100%" height="500px"
-      src="https://www.youtube.com/embed/lt6ZmKFHk9k">
-    </iframe>
-//-->
+
     <main>
       <div class="main-wrapper">
-        <p>MAIN-WRAPPER</p>
-      </div>
 
-      <div class="header">
-
-        <div class="HamMenu" >
-            <img id="menu" src="images/menu.png" alt="" width="">
-            <ul class="menu-elements">
-                <li><a href="Index.html"> <input type="button" value="Home"></a></li>
-                <li><a href="Diagnostico.html"> <input type="button" value="Diagnóstico"></a></li>
-                <li><a href="MesaRedonda.html"> <input type="button" value="Mesa Redonda"></a></li>
-                <li><a href="PanelDiscucion.html"> <input type="button" value="Panel de Discución"></a></li>
-                <li><a href="Conferencia.html"> <input type="button" value="Conferencia"></a></li>
-            </ul>
-        </div>
-
-        <div class="tile--css_animations__demo1">
-          <h6>
-            <font color="white" id="status"><p id="status"><span>Ro</span>berto <span>Rivera</span> Terán</p></font>
-          </h6>
-          <h5>
-            <font color="white"><p id="message">Ingeniería <span>en</span><span> Tecnologías</span> Computacionales - <span>A00369870</span></p></font>
-          </h5>
-        </div>
-
-      </div>
-
-      <div id="about">
-
-        <img class="Photo"src="images/photo.jpg" alt="" >
-
-        <div class="AboutBox">
-          <h4><p>About</p></h4>
-          <h5>
-            <p>
-              Soy una persona apasionada, creativa y honesta. Acualmente cursando la carrera de Ingeniería en tecnologías computacionales
-            </p>
-          </h5>
-        </div>
-
-      </div>
-
-      <div id="info">
-
-        <div class="AboutBox">
-          <h4><p>Expresión Verbal en el Ámbito Profesional</p></h4>
-          <h5>
-            <p>
-              Escuela: Instituto Tecnológico y de Estudios Superiores de Monterrey campus Ciudad de México
-            </p>
+        <div class="main-section">
+          <div class="">
+            <h4><p>Expresión Verbal en el Ámbito Profesional</p></h4>
             <br>
-            <p>
-              Profesor: Carlos Refugio Sánchez Moreno
-            </p>
-          </h5>
+            <h5>
+              <p>
+                Escuela: Instituto Tecnológico y de Estudios Superiores de Monterrey campus Ciudad de México
+              </p>
+              <br>
+              <p>
+                Profesor: Carlos Refugio Sánchez Moreno
+              </p>
+            </h5>
+            <hr  style="size:0.5;width:80%;text-align:center;margin-left:0;border-color:grey">
+          </div>
         </div>
+
+
+
+
+
 
       </div>
     </main>
+
 
     <script src="js/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
     <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
 
     <script>
-      $("#menu").on("click", function(){
-        $(".HamMenu ul").toggle("slow");
-      });
-
-      $(document).ready(function(){
-        $(".slider").bxSlider();
-      });
-
+      //Javascript
     </script>
 
   </body>
