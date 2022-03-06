@@ -115,6 +115,23 @@ header h1{
 	color: white;
 }
 
+ul li{
+	list-style: none;
+	margin-left: 5%;
+	padding-bottom: 5%;
+	
+}
+
+ul li a{
+	text-decoration: none;
+	color: seashell;
+
+}
+
+ul li a:hover{
+	color: #b60fd4;
+}
+
 /************************************************/
 /*                                              */
 /*                 Main                         */
