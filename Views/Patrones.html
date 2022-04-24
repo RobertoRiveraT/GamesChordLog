@@ -1,0 +1,150 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Arepas - wiki</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,900" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/IndexStyles.css" rel="stylesheet">
+  </head>
+  <body>
+
+    <header>
+
+      <div class="header-wrapper">
+
+        <div class="header-section">
+          <h1>GamesChord</h1>
+        </div>
+
+        <div id="description" class="header-section">
+          <p>
+            <!--Descripcion (Objetivo del proyecto)-->
+            Proyecto final de la materia Diseño y arquitectura de Software.
+            <br>
+            <br>
+            Enfocado en la documentación sobre el primer proyecto integrador de laboratorio Web.
+          </p>
+        </div>
+
+        <div class="header-section">
+          <hr  style="size:1;width:70%;text-align:left; margin-left:0;border-color:rgb(115, 115, 115)">
+        </div>
+
+        <div id="navegation" class="header-section">
+
+          <ul>
+            <li><a href="../index.html">HOME</a></li>
+            <!-- <li><button class="link">Clicky</button></li>-->
+            <li><a>PATRONES ARQ.</a></li>
+            <li><a href="./Requerimientos.html">REQUERIMIENTOS</a></li>
+            <li><a href="./trabajos.html">TRABAJOS</a></li>
+            <li><a href="https://docs.google.com/document/d/1xgjR8qNIL4dVioJWkyIyo_jC0A3cR3qV0JKV_jCnb5M/edit?usp=sharing" target="blank">DOCUMENTACION</a></li>
+          </ul>
+        </div>
+
+        <div class="header-section">
+          <hr  style="size:1;width:70%;text-align:left; margin-left:0;border-color:rgb(115, 115, 115)">
+        </div>
+
+      </div>
+
+    </header>
+
+    <main>
+      <div class="main-wrapper">
+
+        <div class="main-section">
+          <div class="">
+            <h4><p>Diseño y Arquitectura de Software</p></h4>
+            <br>
+            <h5>
+              <p>
+                Escuela: Instituto Tecnológico y de Estudios Superiores de Monterrey campus Ciudad de México
+              </p>
+              <br>
+              <p>
+                Profesora: Marlene O. Sánchez Escobar
+              </p>
+            </h5>
+            <hr  style="size:0.5;width:80%;text-align:center;margin-left:0;border-color:grey">
+          </div>
+        </div> 
+    </div> 
+
+    <div class="Req">
+        <br>
+        <h4>Adaptive pattern</h4>   
+        <br>
+        <ul>
+            <li><a >Justificación: </a></li>
+            <li><a >Para la construcción del servicio web que proporcionará GamesChord se 
+                va a utilizar dos APIs: Steam API y Spotify API desde las cuales mayormente 
+                se solicitara información con la que trabaja el algoritmo principal de 
+                recomendación de música. Dicha información no viene organizada para 
+                satisfacer específicamente las necesidades de este proyecto, por lo que se 
+                tendría que necesitar una API propia u una librería que pueda organizar los 
+                datos de tal forma que el algoritmo lo pueda aceptar y procesar. </a></li>
+        </ul>
+
+        <h4>Lyered Pattern</h4>   
+        <br>
+        <ul>
+            <li><a >Justificación: </a></li>
+            <li><a >Para el control en general de todo le d¿flujo de información que pasa a 
+                través del aplicativo software y en general de la interacción con el usuario 
+                se debe usar una logia ce capas, ya que toda la información debe de ser 
+                procesada antes de guardarla en la base de datos y antes de presentársela al 
+                usuario. Esto por temas de seguridad, autenticación y aplicación del 
+                algoritmo que recomienda la música el cual es el servicio no esencial de 
+                mayor prioridad. </a></li>
+        </ul>
+
+        <h4>Composite Pattern</h4>   
+        <br>
+        <ul>
+            <li><a >Justificación: </a></li>
+            <li><a >El proyecto de GamesChord está desarrollado en node JS, por lo que se 
+                utilizará la estructura estándar que se utiliza a nivel mundial. Esta 
+                consiste en seccionar las diferentes funcionalidades del proyecto en folders 
+                designados (Controllers, Routes, Views, etc). El patrón compuesto nos sirve 
+                para definir los diferentes elementos que se pueden o se van a integrar a 
+                cada vista en particular. Por ejemplo, el header de la página web 
+                generalmente se quiere que sea persistente pero no se va a copiar y pegar el 
+                mismo código del header en cada viewer sino que se hace un bloque que se 
+                llama en cada view en donde se quiera tener el header.</a></li>
+        </ul>
+
+        <h4>Proxy Pattern</h4>   
+        <br>
+        <ul>
+            <li><a >Justificación: </a></li>
+            <li><a >Se puede considerar un patrón de Proxy (proxy remoto) al momento de 
+                tener un carpeta de controllers ya que el usuario no interactúa directamente 
+                con la API sino que primero su la route request handler pasa primero por los 
+                controllers como node JS dictamina. Y a parte se tiene que hacer un llamado 
+                desde las API de Steam o de Spotify hacia sus servidores para obtener la 
+                información de las cuentas del usuario en esos servicios ajenos al proyecto. 
+                De igual forma se puede considerar un Proxy virtual que guarde una 
+                persistencia de toda la información de la cuenta del usuario en Steam Y 
+                Spotify para poder así consultarla sin tener que hacer una llamada cada.  </a></li>
+        </ul>
+
+    </div>
+    
+    
+
+
+    </main>
+    
+    <script src="js/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+    <script>
+      //Javascript
+    </script>
+
+  </body>
+
+</html>
